@@ -9,12 +9,11 @@ st.title('Welcome to the House Prediction app')
 
 st.subheader('Enter the information of the house')
 
-LotArea = st.slider('Lot Area', 0, 1000, 0) 
-TotalBsmtSF = st.slider('Basement Square Feet', 0, 1000, 0)
-BedroomAbvGr = st.slider('Number of Bedrooms', 0, 10, 0)
-GarageCars = st.slider('Car spaces in Garage', 0, 10, 0)
-
-
+LotArea = st.number_input("Lot Area")
+TotalBsmtSF = st.number_input("Basement Square Feet")
+BedroomAbvGr = st.number_input("Number of Bedrooms")
+GarageCars = st.number_input("Car spaces in Garage")
+ 
 import pandas as pd
 new_house = pd.DataFrame({
     'LotArea':[LotArea],
