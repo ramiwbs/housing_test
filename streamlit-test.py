@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # NEED TO BE CHANGED TO WHERE YOUR PATH IS
-model = pickle.load(open('/app/deplymodel_app/models/trained_pipe_lr.sav', 'rb'))
+model = pickle.load(open('models/trained_pipe_lr.sav', 'rb'))
 
 st.title('Welcome to the House Prediction app')
 
